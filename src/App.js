@@ -107,7 +107,7 @@ function App() {
                         <div
                             style={{
                                 display: 'flex',
-                                justifyContent: 'space-between',
+                                flexDirection: 'column',
                             }}
                         >
                             <div>
@@ -128,8 +128,9 @@ function App() {
                             <div
                                 id="story"
                                 style={{
-                                    width: 400,
+                                    width: '100%',
                                     backgroundColor: '#FFFFFF',
+                                    paddingBottom: 56,
                                 }}
                             >
                                 <div
@@ -169,61 +170,68 @@ function App() {
                                     }}
                                 >
                                     {tracks !== null &&
-                                        tracks.map((t) => (
-                                            <div className="track-container">
-                                                <img
-                                                    src={`${t.album.images[2].url}`}
-                                                    alt=""
-                                                    srcset=""
-                                                    height="48px"
-                                                    style={{
-                                                        marginRight: 16,
-                                                        borderRadius: '50%',
-                                                    }}
-                                                />
-                                                <div
-                                                    style={{
-                                                        display: 'flex',
-                                                        justifyContent:
-                                                            'space-between',
-                                                        alignItems: 'center',
-                                                        width: '100%',
-                                                    }}
-                                                >
-                                                    <div
-                                                        style={{
-                                                            display: 'flex',
-                                                            flexDirection:
-                                                                'column',
-                                                        }}
-                                                    >
+                                        tracks.map(
+                                            (t, i) =>
+                                                i < 10 && (
+                                                    <div className="track-container">
+                                                        <img
+                                                            src={`${t.album.images[2].url}`}
+                                                            alt=""
+                                                            srcset=""
+                                                            height="48px"
+                                                            style={{
+                                                                marginRight: 16,
+                                                                borderRadius:
+                                                                    '50%',
+                                                            }}
+                                                        />
                                                         <div
                                                             style={{
-                                                                fontSize: 16,
-                                                                fontWeight: 600,
+                                                                display: 'flex',
+                                                                justifyContent:
+                                                                    'space-between',
+                                                                alignItems:
+                                                                    'center',
+                                                                width: '100%',
                                                             }}
                                                         >
-                                                            {t.name}
-                                                        </div>
-                                                        <div
-                                                            style={{
-                                                                fontSize: 12,
-                                                                marginTop: 4,
-                                                            }}
-                                                        >
-                                                            {t.album.artists.map(
-                                                                (a) => a.name
-                                                            )}
+                                                            <div
+                                                                style={{
+                                                                    display:
+                                                                        'flex',
+                                                                    flexDirection:
+                                                                        'column',
+                                                                }}
+                                                            >
+                                                                <div
+                                                                    style={{
+                                                                        fontSize: 16,
+                                                                        fontWeight: 600,
+                                                                    }}
+                                                                >
+                                                                    {t.name}
+                                                                </div>
+                                                                <div
+                                                                    style={{
+                                                                        fontSize: 12,
+                                                                        marginTop: 4,
+                                                                    }}
+                                                                >
+                                                                    {t.album.artists.map(
+                                                                        (a) =>
+                                                                            a.name
+                                                                    )}
+                                                                </div>
+                                                            </div>
+                                                            <div>
+                                                                {msToSeconds(
+                                                                    t.duration_ms
+                                                                )}
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                    <div>
-                                                        {msToSeconds(
-                                                            t.duration_ms
-                                                        )}
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        ))}
+                                                )
+                                        )}
                                 </div>
                             </div>
                         </div>
