@@ -5,7 +5,7 @@ import download from 'downloadjs'
 
 function App() {
     const CLIENT_ID = process.env.REACT_APP_SPOT_CLIENT_ID
-    const REDIRECT_URI = 'http://localhost:3000'
+    const REDIRECT_URI = process.env.REACT_APP_SPOT_REDIRECT_URL
     const AUTH_ENDPOINT = 'https://accounts.spotify.com/authorize'
     const RESPONSE_TYPE = 'token'
 
