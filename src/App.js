@@ -154,9 +154,9 @@ function App() {
                                     <div
                                         style={{
                                             color: '#F2BE22',
-                                            fontSize: 56,
+                                            fontSize: 40,
                                             marginTop: 180,
-                                            fontWeight: 700,
+                                            fontWeight: 500,
                                             fontFamily: 'DM Sans',
                                         }}
                                     >
@@ -165,10 +165,11 @@ function App() {
                                     <div
                                         style={{
                                             color: '#FFFFFF',
-                                            fontSize: 64,
-                                            fontWeight: 600,
+                                            fontSize: 52,
+                                            fontWeight: 700,
                                             marginTop: 8,
                                             fontFamily: 'Fraunces',
+                                            letterSpacing: 4,
                                         }}
                                     >
                                         what we're listening to
@@ -177,8 +178,9 @@ function App() {
                                 <div
                                     style={{
                                         maxWidth: '100%',
-                                        paddingLeft: 64,
-                                        paddingRight: 64,
+                                        paddingLeft: 96,
+                                        paddingRight: 96,
+                                        marginTop: 96,
                                     }}
                                 >
                                     {tracks !== null &&
@@ -190,7 +192,7 @@ function App() {
                                                             src={`${t.album.images[1].url}`}
                                                             alt=""
                                                             srcset=""
-                                                            height="128px"
+                                                            height="80px"
                                                             style={{
                                                                 marginRight: 48,
                                                                 borderRadius:
@@ -227,6 +229,7 @@ function App() {
                                                                     style={{
                                                                         fontSize: 32,
                                                                         marginTop: 4,
+                                                                        fontWeight: 400,
                                                                     }}
                                                                 >
                                                                     {t.album.artists.map(
