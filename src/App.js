@@ -52,7 +52,6 @@ function App() {
             alert('need new spotify token, please log back in')
             setTokenHeader('')
             window.localStorage.removeItem('token')
-            window.location.reload()
         }
     }
 
