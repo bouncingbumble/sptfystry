@@ -38,15 +38,22 @@ function App() {
     }
 
     const getUser = async () => {
-        const data = await apiCall('GET', 'me', {
-            params: {
-                q: '',
-                type: '',
-            },
-        })
+        try {
+            const data = await apiCall('GET', 'me', {
+                params: {
+                    q: '',
+                    type: '',
+                },
+            })
 
-        setUser(data)
-        return data
+            setUser(data)
+            return data
+        } catch (error) {
+            alert('need new spotify token, please log back in')
+            setTokenHeader('')
+            window.localStorage.removeItem('token')
+            window.location.reload()
+        }
     }
 
     const getUsersPlaylists = async (userData) => {
