@@ -131,6 +131,8 @@ function App() {
                                     width: '100%',
                                     backgroundColor: '#FFFFFF',
                                     paddingBottom: 56,
+                                    height: 1920,
+                                    maxWidth: 1080,
                                 }}
                             >
                                 <div
@@ -139,13 +141,15 @@ function App() {
                                         marginBottom: 24,
                                         paddingTop: 60,
                                         paddingBottom: 36,
-                                        paddingLeft: 24,
+                                        paddingLeft: 60,
+                                        height: 376,
                                     }}
                                 >
                                     <div
                                         style={{
                                             color: '#DDB834',
-                                            fontSize: 16,
+                                            fontSize: 56,
+                                            marginTop: 180,
                                         }}
                                     >
                                         THIS WEEK
@@ -153,7 +157,7 @@ function App() {
                                     <div
                                         style={{
                                             color: '#FFFFFF',
-                                            fontSize: 22,
+                                            fontSize: 64,
                                             fontFamily: 'serif',
                                             fontWeight: 600,
                                             marginTop: 8,
@@ -165,8 +169,8 @@ function App() {
                                 <div
                                     style={{
                                         maxWidth: '100%',
-                                        paddingLeft: 16,
-                                        paddingRight: 16,
+                                        paddingLeft: 64,
+                                        paddingRight: 64,
                                     }}
                                 >
                                     {tracks !== null &&
@@ -175,12 +179,12 @@ function App() {
                                                 i < 10 && (
                                                     <div className="track-container">
                                                         <img
-                                                            src={`${t.album.images[2].url}`}
+                                                            src={`${t.album.images[1].url}`}
                                                             alt=""
                                                             srcset=""
-                                                            height="48px"
+                                                            height="128px"
                                                             style={{
-                                                                marginRight: 16,
+                                                                marginRight: 48,
                                                                 borderRadius:
                                                                     '50%',
                                                             }}
@@ -205,7 +209,7 @@ function App() {
                                                             >
                                                                 <div
                                                                     style={{
-                                                                        fontSize: 16,
+                                                                        fontSize: 48,
                                                                         fontWeight: 600,
                                                                     }}
                                                                 >
@@ -213,7 +217,7 @@ function App() {
                                                                 </div>
                                                                 <div
                                                                     style={{
-                                                                        fontSize: 12,
+                                                                        fontSize: 36,
                                                                         marginTop: 4,
                                                                     }}
                                                                 >
@@ -223,7 +227,11 @@ function App() {
                                                                     )}
                                                                 </div>
                                                             </div>
-                                                            <div>
+                                                            <div
+                                                                style={{
+                                                                    fontSize: 36,
+                                                                }}
+                                                            >
                                                                 {msToSeconds(
                                                                     t.duration_ms
                                                                 )}
