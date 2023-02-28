@@ -165,7 +165,7 @@ function App() {
                                     <div
                                         style={{
                                             color: '#FFFFFF',
-                                            fontSize: 52,
+                                            fontSize: 64,
                                             fontWeight: 700,
                                             marginTop: 8,
                                             fontFamily: 'Fraunces',
