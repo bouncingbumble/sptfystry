@@ -109,7 +109,8 @@ body {
     height: 100%;
     overflow: hidden;
     margin: 0;
-    font-family: 'Helvetica';
+    font-family: 'Fraunces', serif;
+    font-family: 'DM Sans', sans-serif;
     color: #231f20;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;

@@ -137,7 +137,7 @@ function App() {
                             >
                                 <div
                                     style={{
-                                        backgroundColor: '#1E7ECC',
+                                        backgroundColor: '#0487D9',
                                         marginBottom: 24,
                                         paddingTop: 60,
                                         paddingBottom: 36,
@@ -147,9 +147,10 @@ function App() {
                                 >
                                     <div
                                         style={{
-                                            color: '#DDB834',
+                                            color: '#F2BE22',
                                             fontSize: 56,
                                             marginTop: 180,
+                                            fontFamily: 'DM Sans',
                                         }}
                                     >
                                         THIS WEEK
@@ -161,6 +162,7 @@ function App() {
                                             fontFamily: 'serif',
                                             fontWeight: 600,
                                             marginTop: 8,
+                                            fontFamily: 'Fraunces',
                                         }}
                                     >
                                         what we're listening to
@@ -209,7 +211,7 @@ function App() {
                                                             >
                                                                 <div
                                                                     style={{
-                                                                        fontSize: 48,
+                                                                        fontSize: 36,
                                                                         fontWeight: 600,
                                                                     }}
                                                                 >
@@ -217,7 +219,7 @@ function App() {
                                                                 </div>
                                                                 <div
                                                                     style={{
-                                                                        fontSize: 36,
+                                                                        fontSize: 32,
                                                                         marginTop: 4,
                                                                     }}
                                                                 >
@@ -229,7 +231,7 @@ function App() {
                                                             </div>
                                                             <div
                                                                 style={{
-                                                                    fontSize: 36,
+                                                                    fontSize: 32,
                                                                 }}
                                                             >
                                                                 {msToSeconds(
