@@ -157,6 +157,7 @@ function App() {
                                             color: '#F2BE22',
                                             fontSize: 56,
                                             marginTop: 180,
+                                            fontWeight: 700,
                                             fontFamily: 'DM Sans',
                                         }}
                                     >
@@ -166,7 +167,6 @@ function App() {
                                         style={{
                                             color: '#FFFFFF',
                                             fontSize: 64,
-                                            fontFamily: 'serif',
                                             fontWeight: 600,
                                             marginTop: 8,
                                             fontFamily: 'Fraunces',
